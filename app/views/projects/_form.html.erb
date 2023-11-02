@@ -26,11 +26,17 @@
 
   <%# Start Custom logic here #%>
     <template data-nested-form-target="template">
-      <%= form.fields_for :todos, Task.new, child_index: 'NEW_RECORD' do |task_fields| %>
+      <%= form.fields_for :tasks, Task.new, child_index: 'NEW_RECORD' do |task_fields| %>
         <%= render "projects/project_task_form", f: task_fields %>
       <% end %>
     </template>
+    <%= form.fields_for :tasks do |task_fields| %>
+      <%= render "projects/project_task_form", f: task_fields %>
+    <% end %>
   
+    <div data-nested-form-target="target"></div>
+
+    <button type="button" data-action="nested-form#add">Add task</button>
   <%# End Custom logic here #%>
 
   <div>
