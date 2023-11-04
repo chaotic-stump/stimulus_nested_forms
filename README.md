@@ -1,24 +1,5 @@
-# README
+# Nested Forms with Stimulus
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Replacement for the nested forms lesson in Comprehensive Rails Tutorial by Jordan Hudgens.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Reference tutorial](https://www.youtube.com/watch?v=7JNRZLTRDCc) with corresponding [source code](https://github.com/Deanout/stimulus_nested_forms/).
